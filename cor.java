@@ -7,7 +7,7 @@ import java.awt.event.MouseEvent;
 
 import javax.swing.*;
 
-public class a {
+public class cor {
     
   public static void main(String[] args) throws InterruptedException{
       int i=0;
