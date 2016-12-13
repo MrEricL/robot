@@ -7,7 +7,7 @@ import cs1.Keyboard;
 public class bot2
 {
     Robot robot = new Robot(); //creates a new object robot
-
+    // FUNCTIONALITY OF THE ROBOT  ____________________________________________________________________________________________________
     public void ircbot (String x){
 	robot.delay(400);
 	robot.mouseMove(441,825);
@@ -43,7 +43,15 @@ public class bot2
 	robot.keyPress(KeyEvent.VK_ENTER);	
 
     }
-  
+    //_____________________________________________________________________________________________________________________________________
+
+
+
+
+
+    
+
+    // IMPORTANT PART ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   public bot2() throws AWTException
     { String search="";
 	//robot.delay(1000);
@@ -51,7 +59,16 @@ public class bot2
       refresh();
     
     }
-  
+
+    //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+    
+
+    //BASIC FUNCTIONALITY -----------------------------------------------------------------------------------------------------------------
   private void click()
   {
       robot.mousePress(InputEvent.BUTTON1_MASK); //just presses and releases the left mouse
@@ -75,7 +92,10 @@ public class bot2
     }
   }
 
+    //-------------------------------------------------------------------------------------------------------------------------------------
 
+
+    //MAIN METHOD
     public static void main(String[] args) throws AWTException //exception needed for the robot if the mouse and keyboard fails, main method
   {
       new bot2();
