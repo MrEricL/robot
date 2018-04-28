@@ -98,7 +98,11 @@ public class bot2
     //MAIN METHOD
     public static void main(String[] args) throws AWTException //exception needed for the robot if the mouse and keyboard fails, main method
   {
-      new bot2();
+      int i = 1000000;
+      while (i > 0){
+	  i--;
+	  mouse
+      }
     
   }    
 }
