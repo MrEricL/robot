@@ -17,7 +17,8 @@ public class newbot {
 	public newbot() throws AWTException {
 		delayed(delayTime);
 		click();
-		type("hi");
+		//type("2");
+		exc();
 
 	}
 
@@ -42,11 +43,32 @@ public class newbot {
 		byte[] b = s.getBytes(); 
 		for (int i=0; i<b.length; i++){
 			int code = b[i];
-			if (code > 96 && code < 123) code = code - 32; // only handles a-z from ASCII code.
-			robot.delay (60);
-			robot.keyPress(code);
-			robot.keyRelease(code);
+			System.out.println(code);
+			if (code >= 65 && code <= 90){
+				robot.keyPress(KeyEvent.VK_SHIFT);
+				robot.keyPress(code);
+				robot.keyRelease(code);
+			}
+			else{
+				robot.keyPress(code);
+				robot.keyRelease(code);				
+			}
 		}
+	}
+	private void tab(){
+		robot.keyPress(KeyEvent.VK_TAB);
+	}
+	private void esc(){
+		robot.keyPress(KeyEvent.VK_ESCAPE);
+	}
+	private void exc(){
+		robot.keyPress(KeyEvent.VK_SHIFT);
+		robot.keyPress(KeyEvent.VK_1); 
+		robot.keyRelease(KeyEvent.VK_SHIFT); 
+		robot.keyPress(KeyEvent.VK_SHIFT);
+	}	
+	private void doublequote(){
+		robot.keyPress(KeyEvent.VK_QUOTEDBL);
 	}
 
 	private void enter(){
