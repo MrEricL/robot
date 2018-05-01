@@ -8,6 +8,6 @@ To customize, edit the function ```public newbot()```
 
 To find coordinates of your screen, run ```cor.java`` and follow on screen directions.
 
-To run the bot:
+To run the bot:   
 ``` javac newbot.java```  
 ``` java newbot ```  
