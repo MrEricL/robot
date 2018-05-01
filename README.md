@@ -9,9 +9,9 @@ Basic usage of java robot class. The program caan type, click and press keys.
  - Customized to enter nonsense into search engines to overload it with bad information
 
 ### Running
-
-To customize, edit the function ```public newbot()```
-
+   
+To customize, edit the function ```public newbot()```.   
+   
 To compile:   
 ```javac *.java``` 
 
