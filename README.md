@@ -1,5 +1,5 @@
 # robot
-Basic usage of java robot class. The program caan type, click and press keys.
+Basic usage of java robot class. The program can type, click and press keys.
 
 **Note:** This will take control of your mouse and keyboard. Please be sure to implement an exit statement if you choose to run through on a loop.
 
