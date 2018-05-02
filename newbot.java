@@ -17,8 +17,9 @@ public class newbot {
 	public newbot() throws AWTException {
 		delayed(delayTime);
 		click();
-		//type("2");
-		exc();
+		type("Ab7");
+		//exc();
+		//back();
 
 	}
 
@@ -57,9 +58,12 @@ public class newbot {
 	}
 	private void tab(){
 		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
+
 	}
 	private void esc(){
 		robot.keyPress(KeyEvent.VK_ESCAPE);
+		robot.keyRelease(KeyEvent.VK_ESCAPE);
 	}
 	private void exc(){
 		robot.keyPress(KeyEvent.VK_SHIFT);
@@ -69,13 +73,16 @@ public class newbot {
 	}	
 	private void doublequote(){
 		robot.keyPress(KeyEvent.VK_QUOTEDBL);
+		robot.keyRelease(KeyEvent.VK_QUOTEDBL);
 	}
 
 	private void enter(){
 		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
 	}
 	private void back(){
 		robot.keyPress(KeyEvent.VK_BACK_SPACE);
+		robot.keyRelease(KeyEvent.VK_BACK_SPACE);
 	}
 	//End Basic Components -----------------------------------------------------------
 
